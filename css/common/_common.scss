@@ -1,0 +1,174 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,input,select
+{
+    font-family: 'nexa_lightregular';
+    color: #333;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color:#0e4f66;
+}
+h3{
+    color:#0e4f66;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+h4{
+    color:#0e4f66;
+}
+h2{
+    color:#0e4f66;
+}
+ul{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,strong{
+    font-family: 'nexabold';
+}
+p{
+    font-size: 13px;
+}
+.btn{
+    font-size: 12px;
+    border:1px solid #999;
+    border-radius: 4px;
+    padding: 10px 15px 9px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover{
+        background: #0e4f66;
+        border-color: #0e4f66;
+        color: #fff;
+    }
+}
+select,
+input{
+    font-size: 13px;
+    height: 34px;
+    padding: 0 16px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+input[type="checkbox"]{
+    height: auto;
+}
+.container{
+    padding: 0 15px;
+}
+
+// common css for table
+.table-wrapper
+{
+    table
+    {
+      width:100%;
+      border-collapse: collapse;
+      tr:not(:last-child)
+      {
+          text-align: left;
+          border-bottom: 1px solid #ccc;
+      }
+    
+      td{
+
+        font-size: 13px;
+      }
+      th,td
+      {
+          line-height: 1;
+        //   color:black;
+      }
+      tr:first-child
+      {
+          border-bottom: 1px solid #999;
+      }
+    }
+}
+
+.main-wrapper{
+    min-height: calc(100vh - 57px - 51px);
+}
+@media all and (min-width: 768px)
+{
+    .main-wrapper{
+        min-height: calc(100vh - 70px - 51px);
+    }
+    .container{
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    table
+    {
+        th
+        {
+          text-transform: uppercase;
+          font-size: 18px;
+        }
+    }
+}
+// pagination
+.paginations{
+    margin: 5% 0 3%;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    li{
+        margin: 0 4px;
+    }
+    li:hover,
+    li.active{
+        a{
+            background: #118975;
+            color: #fff;
+        }
+    }
+    a{
+        padding: 9px 13px;
+        width: 36px;
+        background: #edebeb;
+        color: #0f0f0f;
+        display: block;
+        border-radius: 6px;
+        text-align: center;
+    }
+}
+
+// for table
+table
+{
+    th,td
+    {
+        // font-size: 18px;
+        padding: 20px 0;
+    }
+}
+
+
+
+@media only screen and(max-width:767px)
+{
+    // for table
+table
+{
+    th,td
+    {
+        font-size: 14px;
+    }
+    td
+    {
+        width:20%;
+        padding:0 10px;
+    }
+}
+}

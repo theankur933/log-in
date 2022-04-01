@@ -1,0 +1,263 @@
+header
+{
+    background-color: #108073;
+    height: 57px;
+}
+.header-sec
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search
+    {
+        width:20px;
+    }
+  .font
+  {
+    line-height: 1;
+  }
+  
+.menutxt
+{
+    color:white;
+    padding:15px;
+     display: flex;
+     align-items:center;
+     .arrow
+     {
+         margin-left:8px;
+         font-size: x-small;
+     }
+     .mimg
+     {
+         width:20px;
+     }
+     
+     .user
+     {
+         width:20px;
+         height:20px;
+         border-radius: 50%;
+         background-color: #ccc;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         img
+         {
+             width:10px;
+         }
+     }
+}
+.humburger-menu-ap,.humburger-menu
+{
+    margin-left:10px;
+}
+.menubar,  .menubar-s
+{
+    li:hover
+    {
+  border-bottom: 1px solid white;
+    }
+}
+.sign-btn
+{
+    font-size: 12px;
+    line-height: 1;
+    padding: 10.5px 28px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover{
+        background: #0e4f66;
+        border-color: #0e4f66;
+        color: #fff;
+    }
+}
+
+}
+@media only screen and(max-width:767px)
+{
+    header
+    {
+        padding:10px 0;
+    }
+    .header-sec
+    {
+        .logo
+        {
+            img
+            {
+                width:140px;
+            }
+        }
+        // ul
+        // {
+        //     display:none;
+        // }
+        .sign-btn-sec
+        {
+            display: none;
+        }
+        .menubar
+        {
+            display: none;
+            width:100%;
+            background-color:#108073;
+            position: absolute;
+            top:57px;
+            padding:10px;
+            border-top:1px solid white;
+            z-index: 1;
+        }
+        .humburger-menu-ap
+        {
+            display: block;
+            height: 36px;
+        }
+       
+        .head
+        {
+            font-size:20px;
+            padding:20px 0;
+        }
+    }
+    .pd15
+    {
+        padding:0 15px;
+    }
+}
+@media only screen and(min-width: 1025px){
+    .humburger-menu{
+        display: none;
+    }
+
+    .menubar-s
+    {
+        display:flex;
+    }
+    .sign-btn-sec
+    {
+        display: flex;
+        align-items: center;
+          
+        .ml10
+        {
+            margin-left:10px;
+        }
+    }
+    .font
+    {
+      font-size: 16px;
+    }
+}
+@media only screen and(max-width: 1024px){
+    .menubar-s
+    {
+        display:none;
+            width:100%;
+            background-color:#108073;
+            position: absolute;
+            top:57px;
+            padding:10px;
+            border-top:1px solid white;
+            z-index: 1;
+    }
+    .sign-btn-sec
+    {
+        display: none;
+    }
+    .humburger-menu{
+        display:block;
+        height: 36px;
+    }
+    .menubar
+    {
+        display:none;
+    }
+}
+@media only screen and(min-width:768px)
+{
+// header 
+header
+{
+    .container
+    {
+        .header-sec
+        {
+            margin:0 -20px;
+        }
+    }
+}
+header{
+    height: 70px;
+    padding:10px 20px;
+}
+.header-sec
+{
+    margin:0 20px;
+    .logo
+    {
+        img
+        {
+            width:191px;
+        }
+    }
+  .list-item
+  {
+      display: flex;
+      align-items: center;
+  
+  }
+}
+// for application and credential page 
+.menubar
+{
+    display: flex;
+}
+.humburger-menu-ap
+{
+display: none;
+}
+}
+
+@media only screen and(min-width:1026px) and (max-width:1137px)
+{
+    .header-sec
+    {
+        .logo
+        {
+            img
+            {
+                width:120px;
+            }
+        }
+    }
+  .menubar-s
+  {
+      .menutxt
+      {
+          font-size: 12px;
+      }
+  }
+}
+
+@media only screen and(min-width:768px) and (max-width:931px)
+{
+.header-sec
+{
+    .menubar
+    {
+        font-size: 12px;
+    }
+}
+}

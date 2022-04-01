@@ -1,0 +1,153 @@
+@import 'common/_common.scss';
+@import 'common/_header.scss';
+@import 'common/_footer.scss';
+
+// application section styling 
+.applications
+{
+    display: flex;
+}
+.application-types-sec
+{
+    background-color: #f0f0f0;
+    justify-content: flex-end;
+    display: flex;
+    padding:20px 0;
+}
+.basic-info
+{
+    background-color:#118975;
+    padding:6px 15px;
+    color:white;
+    line-height: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    span
+    {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+.application-type-lists
+{
+    li
+    {
+        a
+        {
+            line-height: 1;
+            color:black;
+            padding:10px 0;
+            display: flex;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// application-types-info section
+.application-types-info
+{
+    padding:20px 0;
+    width:calc(100% - 30%);
+    margin:0 6%;
+}
+.btn-wrapper
+{
+    padding:35px 0;
+}
+
+@media all and (min-width: 768px){
+    .application-types
+    {
+        width:63%;
+        h2
+        {
+            padding-left:15px;
+            padding-right: 15px;
+        }
+    }
+    .application-types-sec
+    {
+        width:30%;
+    }
+    .humburger-menu
+    {
+        display:none;
+    }
+    .basic-info
+    {
+        font-size: 18px;
+        span
+        {
+            img
+            {
+                width:20px;
+            }
+        }
+    }
+    .head
+    {
+        font-size: 30px;
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
+    .application-type-lists
+    {
+        li
+        {
+            a
+            {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:767px)
+{
+    .applications
+    {
+        padding: 0 15px;
+    }
+   .application-types-sec
+   {
+    display: none;
+   }
+   .application-types-info
+   {
+    overflow: auto;
+    margin: 0;
+    width: 100%;
+   }
+   .basic-info
+   {
+       font-size: 14px;
+           span
+           {
+               img
+               {
+                   width:20px;
+               }
+           }
+   }
+   .application-type-lists
+    {
+        padding:0 10px;
+        li
+        {
+            a
+            {
+                font-size: 14px;
+            }
+        }
+    }
+    .head
+    {
+        font-size: 18px;
+    }
+}

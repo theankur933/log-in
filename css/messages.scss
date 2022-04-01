@@ -1,0 +1,265 @@
+@import "common/_common.scss";
+@import "common/_header.scss";
+@import "common/_footer.scss";
+.messages-wrapper {
+    display: flex;
+    position: relative;
+    // overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #f0f0f0;
+        right: calc(100% - 15px);
+        top: 0;
+    }
+}
+.messages-left-sec {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f0f0f0;
+    padding: 30px 0;
+}
+.message-left {
+    h1 {
+        line-height: 1;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+}
+
+.search-tube {
+    margin-right: 20px;
+    margin-bottom: 42px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    button {
+        padding: 8px 10px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #118975;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    input {
+        width: calc(100% - 34px);
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-size: 12px;
+        line-height: 1;
+        border-radius: 5px;
+    }
+}
+.hospital-list {
+    background-color: transparent;
+    // color: black;
+    line-height: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0 0 1px;
+    align-items: center;
+
+    .hll {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        cursor: pointer;
+        p {
+            margin-left: 20px;
+            width: 74%;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+    }
+    .arrow-sec {
+        img {
+            width: 20px;
+        }
+    }
+    .hll-img {
+        display: flex;
+    }
+}
+.active {
+    background-color: #118975;
+    color: #fff;
+}
+.show {
+    display: none;
+}
+.p-show:hover {
+    background-color: #118975;
+
+    color: #fff;
+
+    .show {
+        display: block;
+    }
+}
+// message right section
+
+.messages-right {
+    .msg-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #999;
+        h4 {
+            line-height: 1.5;
+            padding: 30px 0;
+            width: 55%;
+        }
+    }
+  
+    .hospital-msg {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        p {
+            font-size: 12px;
+            line-height: 1;
+            color: black;
+            border: 1px solid #999;
+            padding: 10px;
+            margin-left: 22px;
+            border-radius: 6px;
+        }
+    }
+
+    .msg-body {
+            /* margin-bottom: 50px; */
+        // padding-bottom: 50px;
+        padding: 10px;
+        height: calc(100% - 88px - 56px);
+        overflow: auto;
+    }
+    .my-msg {
+        display: flex;
+        justify-content: flex-end;
+        p {
+            font-size: 12px;
+            line-height: 1;
+            color: black;
+            border: 1px solid #999;
+            padding: 10px;
+            margin-right: 22px;
+            border-radius: 6px;
+        }
+        span {
+            // margin-left: 10px;
+        }
+    }
+    .mmsg {
+        background-color: #118975;
+    }
+    .your-message {
+        padding-top: 20px;
+        border-top: 1px solid #999;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            border: none;
+            outline: none;
+            width: calc(100% - 95px);
+            ::placeholder {
+                color: black;
+            }
+        }
+
+        button {
+            width: 95px;
+        }
+    }
+}
+.user-shell {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+.bo {
+    background-color: #0e4f66;
+}
+@media only screen and(max-width:767px) {
+    
+    .msg-body {
+        /* margin-bottom: 50px; */
+    // padding-bottom: 50px;
+    padding: 10px;
+    height: calc(100% - 63px - 56px);
+    overflow: auto;
+}
+    .messages-left-sec {
+        // width: 30%;
+        display: none;
+    }
+    .message-left {
+        h3 {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    .messages-right {
+        width: 100%;
+        padding: 0;
+        .msg-head {
+            h4 {
+                font-size: 14px;
+                line-height: 1.5;
+                padding: 10px 0;
+                width: 55%;
+                height: 62px;
+                overflow: hidden;
+            }
+        }
+        .hospital-msg{
+            padding: 15px 0;
+        }
+    }
+  
+    .messages-wrapper:before{
+        display: none;
+    }
+    .my-msg
+    {
+        padding:15px 0;
+    }
+}
+
+@media only screen and(min-width:768px) {
+    .messages-left-sec {
+        width: 49.1%;
+        max-width: 380px;
+    }
+    .messages-right {
+        // width: calc(100% - 49.1%);
+        padding: 30px 0 30px 50px;
+        width: 100%;
+    }
+    .message-left {
+        // width:76%;
+        h3 {
+            font-size: 25px;
+        }
+    }
+    .msg-head {
+        h4 {
+            font-size: 18px;
+        }
+    }
+}

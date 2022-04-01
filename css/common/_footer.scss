@@ -1,0 +1,22 @@
+// copyright section
+.copyright-sec {
+    background-color: #0e4f66;
+    p {
+        font-size: 12px;
+        padding: 25px 0;
+        line-height: 1px;
+        color: white;
+        text-align: center;
+    }
+}
+@media all and (min-width: 768px) {
+    .copyright-sec {
+        p{
+            font-size: 14px;
+        }
+    }
+}
+@media only screen and(max-width:767px) {
+    .copyright-sec {
+    }
+}

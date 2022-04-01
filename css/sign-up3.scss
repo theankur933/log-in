@@ -1,0 +1,179 @@
+@import 'common/_common.scss';
+@import 'common/_header.scss';
+@import 'common/_footer.scss';
+
+.sign-body
+{
+ background-image: url('../images/New\ Project.png');
+ background-repeat: no-repeat;
+ background-size:cover;
+ width:100%;
+ display: flex;
+}
+
+.sign-up-sec
+{
+    background-color: white;
+    width:64.3%;
+    margin:0 auto;
+    // padding:100px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sign-up
+{
+    text-align: center;
+    width: 100%;
+    h2
+    {
+        line-height: 1;
+        color:#0e4f66;
+        padding:20px 0;
+    }
+  form
+  {
+    margin:0 auto;
+  }
+    .form-list-sec
+    {
+      
+   ul{
+            li
+            {
+                margin:10px 0;
+               div
+               {
+                   display: flex;
+                   border:1px solid #0e4f66;
+                   border-radius: 5px;
+               }
+                span
+                {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:30px;
+                    padding:17px;
+                    height: 30px;
+                    background-color: #0e4f66;
+                    img
+                    {
+                        width:20px;
+                    }
+
+                }
+                input
+                {
+                    width:calc(100% - 30px);
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+.check-sec
+{
+  display: flex;
+//   align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  span
+  {
+      margin-left:10px;
+  }
+  a
+  {
+    color:#41a191;
+  }
+  a:hover
+  {
+      color: #0e4f66;
+  }
+}
+.btn-sec
+{
+    padding:20px 0;
+    .btn
+    {
+        width:229px;
+    }
+}
+}
+
+@media only screen and(min-width:768px)
+{
+    
+.sign-up-sec
+    {
+        width:64.3%;
+    }
+
+    .sign-up
+    {
+        h2
+        {
+            font-size: 30px;
+        }
+    }
+    .form-list-sec
+    {
+        display: flex;
+        ul
+        {
+            width:50%;
+            padding:0 10px;
+    
+        }
+    }
+    form
+    {
+        padding: 10px;
+          width:60%;
+    }
+
+    .check-sec
+    {
+        padding:20px 0
+    }
+   
+
+}
+@media only screen and(max-width:767px)
+{
+    
+    .sign-up {
+        width: 80%;
+        max-width: 320px;
+    }
+    .sign-up-sec
+    {
+        width:100%;
+    }
+    .sign-up
+    {
+        h2
+        {
+            font-size: 16px;
+        }
+    }
+    .form
+    {
+          width:70%;
+    }
+    .form-list-sec
+    {
+        ul
+        {
+            width:100%;
+            padding:0 10px;
+    
+        }
+    }
+    .check-sec
+    {
+        padding:5px 15px;
+    }
+    
+}

@@ -1,0 +1,166 @@
+@import "common/_common.scss";
+@import "common/_header.scss";
+@import "common/_footer.scss";
+
+// sign in section styling
+.sign-body {
+    background-image: url("../images/New\ Project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.signin-sec {
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+}
+.form {
+    margin: 0 auto;
+
+    h1 {
+        color: white;
+        line-height: 1;
+    }
+    .field-sec {
+        padding-top: 10px;
+    }
+
+    .field {
+        border: 1px solid white;
+        display: flex;
+        margin: 15px 0;
+        color: white;
+        border-radius: 5px;
+        span {
+            display: flex;
+            background-color: white;
+            align-items: center;
+            padding: 4px;
+
+            justify-content: center;
+            width: 35px;
+            height: 34px;
+            img {
+                // width:20px;
+                // height:20px;
+            }
+        }
+
+        input {
+            width: calc(100% - 20px);
+            border: none;
+            outline: none;
+            outline: none;
+            padding: 5px 10px;
+            background-color: transparent;
+            color: white;
+            font-size: 13px;
+        }
+        ::placeholder {
+            color: white;
+        }
+    }
+    .submit-sec {
+        .submit {
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 1;
+            border: 1px solid white;
+            color: white;
+            outline: none;
+            background-color: transparent;
+            transition: all 0.2s linear;
+            cursor: pointer;
+        }
+        .submit:hover {
+            background: #0e4f66;
+            border-color: #0e4f66;
+            color: #fff;
+        }
+    }
+    .btn-sec {
+        display: flex;
+        justify-content: center;
+        a {
+            display: block;
+            padding: 0 15px;
+            font-size: 10px;
+            line-height: 1;
+            color: white;
+            transition: 0.3s ease all;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .bo {
+            border-right: 1px solid white;
+        }
+    }
+}
+
+// copyright section
+
+// .copyright-sec {
+//     background-color: #0e4f66;
+
+//     p {
+//         font-size: 14px;
+//         padding: 25px 0;
+//         line-height: 1px;
+//         color: white;
+//         text-align: center;
+//     }
+// }
+
+@media only screen and(max-width:767px) {
+    .sign-body{
+        display: flex;
+        align-items: center;
+    }
+    .signin-sec{
+        width: 100%;
+    }
+    // signin section styling
+    .form {
+        width: 90%;
+        h1 {
+            font-size: 14px;
+        }
+    }
+    .submit-sec {
+        padding: 10px 0;
+        .submit {
+            padding: 10px 35px;
+        }
+    }
+    .btn-sec {
+        padding: 10px 0;
+    }
+}
+@media only screen and(min-width:768px) {
+    // signin sec styling
+    .sign-body {
+        padding: 150px 0;
+        min-height: calc(100vh - 70px - 51px);
+    }
+    .signin-sec {
+        position: relative;
+        width: 50%;
+        top: 20px;
+        .form {
+            width: 50%;
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+    .submit-sec {
+        padding: 20px 0;
+        .submit {
+            padding: 15px 35px;
+        }
+    }
+}
